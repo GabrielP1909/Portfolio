@@ -8,30 +8,30 @@
 
 /* Estilos globais do corpo do documento */
 body {
-  font-family: 'Poppins', sans-serif; /* Define fonte principal */
-  background-color: #1e1b2e; /* Cor de fundo dark */
-  color: #fff; /* Cor do texto */
-  line-height: 1.6; /* Espaçamento entre linhas */
+  font-family: 'Poppins', sans-serif; 
+  background-color: #1e1b2e;
+  color: #fff; 
+  line-height: 1.6;
 }
 
 /* ===== EFEITO DE PARTÍCULAS ===== */
 /* Container para o efeito de partículas animadas */
 #particles-js {
-  position: fixed; /* Fixo na tela */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Fica atrás do conteúdo */
+  z-index: -1; 
 }
 
 /* ===== CABEÇALHO ===== */
 header {
-  background: rgba(30, 27, 46, 0.9); /* Fundo com transparência */
+  background: rgba(30, 27, 46, 0.9);
   padding: 15px 0;
-  position: sticky; /* Fixa no topo ao rolar */
+  position: sticky; 
   top: 0;
-  z-index: 1000; /* Garante sobreposição */
+  z-index: 1000; 
 }
 
 /* Container flex para alinhar logo e navegação */
@@ -48,14 +48,14 @@ header {
 .logo {
   font-size: 28px;
   font-weight: bold;
-  color: #a78bfa; /* Cor roxa */
+  color: #a78bfa; 
 }
 
 /* Lista de navegação */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px; /* Espaço entre itens */
+  gap: 25px; 
 }
 
 /* Links do menu */
@@ -67,7 +67,7 @@ header {
 
 /* ===== SEÇÃO HERO ===== */
 .hero {
-  padding: 140px 20px 100px; /* Espaçamento grande superior/inferior */
+  padding: 140px 20px 100px; 
   text-align: center;
 }
 
@@ -97,7 +97,7 @@ header {
   padding: 8px 15px;
   background: #3b3054;
   border-radius: 5px;
-  transition: 0.3s; /* Transição suave */
+  transition: 0.3s;
 }
 
 /* Efeito hover nos botões */
@@ -107,11 +107,11 @@ header {
 
 /* ===== SEÇÃO SOBRE MIM ===== */
 .about-box {
-  background: rgba(59, 48, 84, 0.5); /* Fundo semi-transparente */
+  background: rgba(59, 48, 84, 0.5); 
   padding: 30px;
   border-radius: 10px;
   max-width: 800px;
-  margin: 0 auto; /* Centralização */
+  margin: 0 auto;
 }
 
 /* ===== SEÇÃO HABILIDADES ===== */
@@ -135,16 +135,16 @@ header {
   background: #3b3054;
   height: 20px;
   border-radius: 10px;
-  overflow: hidden; /* Esconde conteúdo extra */
+  overflow: hidden; 
 }
 
 /* Barra de progresso preenchida */
 .progress {
   height: 100%;
   background: #a78bfa;
-  text-align: right; /* Alinha texto à direita */
+  text-align: right; 
   padding-right: 10px;
-  line-height: 20px; /* Centraliza verticalmente */
+  line-height: 20px; 
   color: #1e1b2e;
   font-weight: bold;
 }
@@ -162,7 +162,7 @@ header {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Espaço entre campos */
+  gap: 15px; 
   max-width: 500px;
   margin: 0 auto;
 }
@@ -180,7 +180,7 @@ header {
 /* Textarea específico */
 .contact-form textarea {
   min-height: 100px;
-  resize: vertical; /* Permite redimensionar verticalmente */
+  resize: vertical; 
 }
 
 /* ===== BOTÕES ===== */
@@ -188,10 +188,10 @@ header {
 .btn {
   display: inline-block;
   padding: 10px 25px;
-  border-radius: 25px; /* Bordas arredondadas */
+  border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s; /* Animação suave */
+  transition: 0.3s; 
   cursor: pointer;
   border: none;
 }

@@ -1,37 +1,36 @@
-// Configuração das partículas usando a biblioteca particles.js
-particlesJS('particles-js', {  // Seleciona o elemento container
+particlesJS('particles-js', { 
   particles: {
-    number: { value: 80 },  // Quantidade de partículas
-    color: { value: '#a78bfa' },  // Cor das partículas (roxo claro)
-    shape: { type: 'circle' },  // Forma geométrica
-    opacity: { value: 0.3 },  // Transparência
-    size: { value: 3 },  // Tamanho
-    line_linked: {  // Configuração das linhas que conectam partículas
+    number: { value: 80 }, 
+    color: { value: '#a78bfa' },  
+    shape: { type: 'circle' },  
+    opacity: { value: 0.3 },  
+    size: { value: 3 },  
+    line_linked: { 
       enable: true,
-      distance: 150,  // Distância máxima para conexão
-      color: '#c4b5fd',  // Cor das linhas
-      opacity: 0.4,  // Transparência
-      width: 1  // Espessuraex
+      distance: 150,  
+      color: '#c4b5fd',  
+      opacity: 0.4,  
+      width: 1  
     },
-    move: {  // Comportamento do movimento
+    move: { 
       enable: true,
-      speed: 2,  // Velocidade
-      direction: 'none',  // Direção aleatória
+      speed: 2, 
+      direction: 'none',  
       random: false,
       straight: false,
-      bounce: true  // Rebate nas bordas
+      bounce: true 
     }
   },
-  interactivity: {  // Interação com o usuário
+  interactivity: { 
     detect_on: 'canvas',
     events: {
-      onhover: {  // Efeito ao passar o mouse
+      onhover: {  
         enable: true,
-        mode: 'grab'  // "Puxa" as partículas
+        mode: 'grab'  
       },
-      onclick: {  // Efeito ao clicar
+      onclick: {  
         enable: true,
-        mode: 'push'  // "Empurra" as partículas
+        mode: 'push'  
       }
     }
   }
