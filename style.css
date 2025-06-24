@@ -1,181 +1,242 @@
+/* ===== RESET E ESTILOS BASE ===== */
+/* Normaliza margens e padding, define box-model para todos elementos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Estilos globais do corpo do documento */
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #1e1b2e;
-  color: #fff;
-  cursor: url('cursor-ring.svg') 16 16, auto;
+  font-family: 'Poppins', sans-serif; /* Define fonte principal */
+  background-color: #1e1b2e; /* Cor de fundo dark */
+  color: #fff; /* Cor do texto */
+  line-height: 1.6; /* Espaçamento entre linhas */
 }
 
+/* ===== EFEITO DE PARTÍCULAS ===== */
+/* Container para o efeito de partículas animadas */
 #particles-js {
-  position: fixed;
+  position: fixed; /* Fixo na tela */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -1; /* Fica atrás do conteúdo */
 }
 
+/* ===== CABEÇALHO ===== */
 header {
-  background: rgba(30, 27, 46, 0.9);
+  background: rgba(30, 27, 46, 0.9); /* Fundo com transparência */
   padding: 15px 0;
-  position: sticky;
+  position: sticky; /* Fixa no topo ao rolar */
   top: 0;
-  z-index: 1000;
+  z-index: 1000; /* Garante sobreposição */
 }
+
+/* Container flex para alinhar logo e navegação */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 20px;
 }
+
+/* Estilo do logotipo */
 .logo {
   font-size: 28px;
   font-weight: bold;
-  color: #a78bfa;
+  color: #a78bfa; /* Cor roxa */
 }
-.logo span {
-  color: #e0b3ff;
-}
+
+/* Lista de navegação */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 25px; /* Espaço entre itens */
 }
+
+/* Links do menu */
 .nav-links a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
   font-weight: 500;
 }
-.menu-toggle {
-  display: none;
-}
 
-
+/* ===== SEÇÃO HERO ===== */
 .hero {
-  padding: 140px 20px 100px;
+  padding: 140px 20px 100px; /* Espaçamento grande superior/inferior */
   text-align: center;
-  background: transparent;
 }
+
+/* Título principal */
 .hero h2 {
   font-size: 36px;
+  margin-bottom: 15px;
 }
-.hero .destaque {
+
+/* Destaque de cor no nome */
+.destaque {
   color: #a78bfa;
 }
+
+/* ===== LINKS SOCIAIS ===== */
 .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
   margin: 20px 0;
 }
+
+/* Botões sociais */
 .social-links a {
-  margin: 0 10px;
-  text-decoration: none;
   color: white;
-  background: #3b3054;
+  text-decoration: none;
   padding: 8px 15px;
+  background: #3b3054;
   border-radius: 5px;
-  transition: 0.3s;
+  transition: 0.3s; /* Transição suave */
 }
+
+/* Efeito hover nos botões */
 .social-links a:hover {
   background: #5b4b7c;
 }
-.btn {
-  display: inline-block;
-  padding: 10px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.btn-primary {
-  background: #a78bfa;
-  color: #1e1b2e;
-}
-.btn-primary:hover {
-  background: #c4b5fd;
-}
-.btn-secondary {
-  background: transparent;
-  color: #a78bfa;
-  border: 1px solid #a78bfa;
-}
-.btn-secondary:hover {
-  background: #a78bfa;
-  color: #1e1b2e;
-}
 
-
-.section {
-  padding: 80px 20px;
-  text-align: center;
-}
-.section-title {
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-
-.skills-grid {
+/* ===== SEÇÃO SOBRE MIM ===== */
+.about-box {
+  background: rgba(59, 48, 84, 0.5); /* Fundo semi-transparente */
+  padding: 30px;
+  border-radius: 10px;
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto; /* Centralização */
 }
+
+/* ===== SEÇÃO HABILIDADES ===== */
+/* Grid de 2 colunas para habilidades */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Container de cada habilidade */
 .skill {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
+
+/* Barra de progresso base */
 .progress-bar {
   width: 100%;
   background: #3b3054;
   height: 20px;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: hidden; /* Esconde conteúdo extra */
 }
+
+/* Barra de progresso preenchida */
 .progress {
   height: 100%;
   background: #a78bfa;
-  text-align: right;
+  text-align: right; /* Alinha texto à direita */
   padding-right: 10px;
-  line-height: 20px;
+  line-height: 20px; /* Centraliza verticalmente */
   color: #1e1b2e;
   font-weight: bold;
 }
 
-
-.projects-grid {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
+/* ===== SEÇÃO PROJETOS ===== */
 .project-card {
   background: #3b3054;
   padding: 20px;
   border-radius: 10px;
-  text-align: left;
-}
-.project-card h3 {
-  color: #c4b5fd;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-
-form {
+/* ===== FORMULÁRIO DE CONTATO ===== */
+.contact-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 15px; /* Espaço entre campos */
   max-width: 500px;
-  margin: auto;
+  margin: 0 auto;
 }
-input, textarea {
+
+/* Campos de input e textarea */
+.contact-form input,
+.contact-form textarea {
   padding: 10px;
   border: none;
   border-radius: 5px;
+  background: #3b3054;
+  color: white;
 }
 
+/* Textarea específico */
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* ===== BOTÕES ===== */
+/* Estilo base para todos botões */
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 25px; /* Bordas arredondadas */
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s; /* Animação suave */
+  cursor: pointer;
+  border: none;
+}
+
+/* Botão primário (roxo) */
+.btn-primary {
+  background: #a78bfa;
+  color: #1e1b2e;
+}
+
+/* Botão primário hover */
+.btn-primary:hover {
+  background: #c4b5fd;
+}
+
+/* Botão secundário (borda roxa) */
+.btn-secondary {
+  background: transparent;
+  color: #a78bfa;
+  border: 1px solid #a78bfa;
+}
+
+/* Botão secundário hover */
+.btn-secondary:hover {
+  background: #a78bfa;
+  color: #1e1b2e;
+}
+
+/* ===== SEÇÕES GENÉRICAS ===== */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Título das seções */
+.section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #c4b5fd;
+}
+
+/* ===== RODAPÉ ===== */
 footer {
   background: #2d1f4f;
   text-align: center;
   padding: 20px;
-  font-size: 14px;
+  margin-top: 50px;
 }

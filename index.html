@@ -1,108 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio de Gabriel</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Configuração básica do documento -->
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+  <title>Portfólio de Gabriel</title> <!-- Título da página na aba do navegador -->
+  
+  <!-- Links para folhas de estilo e fontes -->
+  <link rel="stylesheet" href="style.css"> <!-- Arquivo CSS principal -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"> <!-- Google Fonts -->
 </head>
+
 <body>
+  <!-- Efeito de partículas no background -->
   <div id="particles-js"></div>
 
+  <!-- Cabeçalho com menu de navegação -->
   <header>
-    <div class="container header-container">
-      <h1 class="logo">Gabriel<span>.</span></h1>
+    <div class="header-container">
+      <h1 class="logo">Gabriel<span>.</span></h1> <!-- Logo com ponto estilizado -->
       <nav>
         <ul class="nav-links">
+          <!-- Links âncora para seções da página -->
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a href="#skills">Habilidades</a></li>
           <li><a href="#projects">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
-      <div class="menu-toggle"><span></span><span></span><span></span></div>
     </div>
   </header>
 
   <main>
+    <!-- Seção Hero - Primeira seção visível -->
     <section id="inicio" class="hero">
-      <div class="container hero-content">
-        <h2>Olá, eu sou <span class="destaque">Gabriel</span></h2>
-        <p>Estudante e entusiasta de tecnologia</p>
-        <div class="social-links">
+      <div class="hero-content">
+        <h2>Olá, eu sou <span class="destaque">Gabriel</span></h2> <!-- Texto com destaque no nome -->
+        <p>Estudante e entusiasta de tecnologia</p> <!-- Subtítulo -->
+        <div class="social-links"> <!-- Links para redes sociais -->
           <a href="https://github.com/GabrielP1909" target="_blank">GitHub</a>
           <a href="#">LinkedIn</a>
         </div>
-        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+        <a href="#projects" class="btn btn-primary">Ver Projetos</a> <!-- Botão CTA -->
       </div>
     </section>
 
-    <section id="sobre" class="section about">
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="section">
       <div class="container">
-        <h2 class="section-title">Sobre Mim</h2>
-        <p>Sou um estudante de 16 anos, atualmente cursando no Instituto Federal Sul-rio-grandense (IFSul) e também no Colégio São Lucas. <br> Sempre fui apaixonado por tecnologia, e estou constantemente aprendendo novas linguagens, explorando design e criando projetos. <br> Meu objetivo é crescer como desenvolvedor e contribuir com soluções criativas para o mundo digital.</p>
+        <h2 class="section-title">Sobre Mim</h2> <!-- Título da seção -->
+        <div class="about-box">
+  <p>Sou Gabriel, estudante de 16 anos apaixonado por tecnologia. Atualmente curso desenvolvimento de sistemas no IFSul e no Colégio São Lucas.</p>
+  <p>Minha jornada na programação começou com Lua aos 11 anos criando scripts para jogos em uma plataforma.
+    <br> Hoje me dedico ao desenvolvimento web com HTML, CSS e JavaScript.</p>
+</div>
       </div>
     </section>
 
-    <section id="skills" class="section skills">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-          <div class="skill"><h3>HTML</h3><div class="progress-bar"><div class="progress" style="width:60%">60%</div></div></div>
-          <div class="skill"><h3>CSS</h3><div class="progress-bar"><div class="progress" style="width:30%">30%</div></div></div>
-          <div class="skill"><h3>Java</h3><div class="progress-bar"><div class="progress" style="width:80%">80%</div></div></div>
-          <div class="skill"><h3>JavaScript</h3><div class="progress-bar"><div class="progress" style="width:35%">35%</div></div></div>
-          <div class="skill"><h3>Python</h3><div class="progress-bar"><div class="progress" style="width:20%">20%</div></div></div>
-          <div class="skill"><h3>Lua</h3><div class="progress-bar"><div class="progress" style="width:80%">80%</div></div></div>
-        </div>
-      </div>
+    <!-- Seção Habilidades com barras de progresso -->
+   <section id="skills" class="section">
+  <div class="container">
+    <h2 class="section-title">Conhecimento</h2>  <!-- Título adicionado -->
+    <div class="skills-grid">
+  <div class="skill">
+    <h3>HTML</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width:40%">40%</div>
+    </div>
+  </div>
+  <div class="skill">
+    <h3>CSS</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width:30%">30%</div>
+    </div>
+  </div>
+  <div class="skill">
+    <h3>JavaScript</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width:25%">25%</div>
+    </div>
+  </div>
+  <div class="skill">
+    <h3>Java</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width:55%">55%</div>
+    </div>
+  </div>
+  <div class="skill">
+    <h3>Python</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width:20%">20%</div>
+    </div>
+  </div>
+  <div class="skill">
+    <h3>Lua</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width:80%">80%</div>
+    </div>
+  </div>
+</div>
     </section>
 
-    <section id="projects" class="section projects">
+    <!-- Seção Projetos -->
+    <section id="projects" class="section">
       <div class="container">
         <h2 class="section-title">Projetos</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <h3>SiteAnalyzer PRO</h3>
-            <p>Ferramenta web avançada que permite a análise técnica completa de websites, avaliando múltiplos aspectos como desempenho.</p>
-            <a href="https://github.com/GabrielP1909/SiteAnalyzer-PRO" target="https://github.com/GabrielP1909/SiteAnalyzer-PRO" class="btn btn-secondary">Ver Projeto</a>
-          </div>
-          <div class="project-card">
-            <h3>Blog Tech CMS</h3>
-            <p>Blog para compartilhar artigos com painel de administração integrado.</p>
-            <a href="#" class="btn btn-secondary">Ver Projeto</a>
-          </div>
-          <div class="project-card">
-            <h3>Loja Sustentável</h3>
-            <p>E-commerce de roupas ecológicas com sistema de pagamento e catálogo dinâmico.</p>
-            <a href="#" class="btn btn-secondary">Ver Projeto</a>
-          </div>
+        <div class="project-card"> <!-- Card de projeto -->
+          <h3>SiteAnalyzer PRO</h3>
+          <p>Ferramenta web para análise técnica de websites.</p>
+          <a href="https://github.com/GabrielP1909/SiteAnalyzer-PRO" target="_blank" class="btn btn-secondary">Ver Projeto</a> <!-- Botão secundário -->
         </div>
       </div>
     </section>
 
-    <section id="contato" class="section contact">
+    <!-- Seção Contato com formulário -->
+    <section id="contato" class="section">
       <div class="container">
         <h2 class="section-title">Contato</h2>
-        <form>
-          <input type="text" placeholder="Seu nome" required />
-          <input type="email" placeholder="Seu email" required />
+        <form class="contact-form"> <!-- Formulário funcional -->
+          <input type="text" placeholder="Seu nome" required> <!-- Campo obrigatório -->
+          <input type="email" placeholder="Seu email" required>
           <textarea placeholder="Sua mensagem" required></textarea>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-primary">Enviar</button> <!-- Botão de submit -->
         </form>
       </div>
     </section>
   </main>
 
+  <!-- Rodapé simples -->
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Gabriel. Todos os direitos reservados.</p>
-    </div>
+    <p>&copy; 2025 Gabriel. Todos os direitos reservados.</p> <!-- Copyright -->
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="script.js"></script>
+  <!-- Scripts JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> <!-- Biblioteca de partículas -->
+  <script src="script.js"></script> <!-- Arquivo JS personalizado -->
 </body>
 </html>
